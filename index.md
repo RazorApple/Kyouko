@@ -24,10 +24,10 @@
 <br>> A: [here](https://nyaaa.tk/go?link=https://discord.gg/DbFeAuj)
 <br>>
 <br>> Q: Commands?
-<br>> A: addrole, anime, ban, birb, cat, chuck, dog, doged, duck, eval, fox, help, invite, kick, leave, ms, msgdelete, play, purge, pwned, qtradio, reddit, reverse, say, serverinfo, setnick, shibe, stop, twitter, volume, vtext, warn, yesno
+<br>> A: Go to the support server and write k!help or k.help.
 <br>>
 <br>> Q: Glitch Websites?  (mostly here for refrance)
 <br>> A: [Kyouko](https://nyaaa.tk/go?link=https://kyoukoos.glitch.me)  [Kyouko 2](https://nyaaa.tk/go?link=https://kyoukooz.glitch.me) 
-
+![dbl](https://discordbots.org/api/widget/493708199447363584.svg?usernamecolor=FFFFFF&topcolor=000000)
 
 
