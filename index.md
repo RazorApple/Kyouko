@@ -28,6 +28,6 @@
 <br>>
 <br>> Q: Glitch Websites?  (mostly here for refrance)
 <br>> A: [Kyouko](https://nyaaa.tk/go?link=https://kyoukoos.glitch.me)  [Kyouko 2](https://nyaaa.tk/go?link=https://kyoukooz.glitch.me) 
-![dbl](https://discordbots.org/api/widget/493708199447363584.svg?usernamecolor=FFFFFF&topcolor=000000)
+<br>![dbl](https://discordbots.org/api/widget/493708199447363584.svg?usernamecolor=FFFFFF&topcolor=000000)
 
 
