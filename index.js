@@ -44,13 +44,13 @@ for (const file of commandFiles) {
 const cooldowns = new Discord.Collection();
       
 function changing_status() {
-    let status = ['v12', 'Moe Branch', 'k.help','xd']
+    let status = ['v13', 'Nyaaa Branch', 'k.help','xd']
     let random = status[Math.floor(Math.random() * status.length)]
     client.user.setActivity(random)
 }
 
 client.on('ready', () => {
-    setInterval(changing_status, 4000);
+    setInterval(changing_status, 2000);
 	console.log('Ready!');
 });
 
