@@ -1,7 +1,5 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const config = require('./config.json');
-
 
 class Bot extends Discord.Client {
   constructor(options) {
@@ -21,7 +19,7 @@ client.commands = new Discord.Collection();
 
 var http = require("http");
 setInterval(function() {
-    http.get("http://p-robot.glitch.me");
+    http.get("http://kyoukoos.glitch.me");
 }, 300000); // every 5 minutes (300000)
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -34,7 +32,7 @@ for (const file of commandFiles) {
 const cooldowns = new Discord.Collection();
       
 function changing_status() {
-    let status = ['v11', 'Dreamy Branch', 'k!help']
+    let status = ['v12', 'Moe Branch', 'k!help','']
     let random = status[Math.floor(Math.random() * status.length)]
     client.user.setActivity(random)
 }
@@ -45,9 +43,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+	if (!message.content.startsWith(process.env.PREFIX) || message.author.bot) return;
 
-	const args = message.content.slice(config.prefix.length).split(/ +/);
+	const args = message.content.slice(process.env.PREFIX.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
 
 	const command = client.commands.get(commandName)
@@ -63,7 +61,7 @@ client.on('message', message => {
 		let reply = `You didn't provide any arguments, ${message.author}!`;
 
 		if (command.usage) {
-			reply += `\nThe proper usage would be: \`${config.prefix}${command.name} ${command.usage}\``;
+			reply += `\nThe proper usage would be: \`${process.env.PREFIX}${command.name} ${command.usage}\``;
 		}
 
 		return message.channel.send(reply);
@@ -102,4 +100,4 @@ client.on('message', message => {
 	if (message.channel.type == "dm") return;
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);
