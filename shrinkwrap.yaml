@@ -1,16 +1,17 @@
 dependencies:
   '@ffmpeg-installer/ffmpeg': 1.0.17
   discord.js: 11.4.2
+  discord.js-musicbot-addon: 13.4.1
   dogeify-js: 1.1.0
   express: 4.16.4
   ffmpeg-binaries: 4.0.0
   latest-tweets: 1.0.4
   maljs: 0.3.0
-  moment: 2.23.0
+  moment: 2.24.0
+  moment-duration-format: 2.2.2
   node-opus: 0.3.1
   opusscript: 0.0.6
   redwrap: 0.0.4
-  sexymusicbot: github.com/DarkoPendragon/discord.js-musicbot-addon/0f7438539bf99f94e435253ed24abb7104db17c9
   snekfetch: 4.0.4
   superagent: 4.1.0
   ytdl-core: 0.29.1
@@ -397,6 +398,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
+  /discord.js-musicbot-addon/13.4.1:
+    dependencies:
+      ytdl-core: 0.29.1
+      ytpl: 0.1.14
+      ytsearcher: 1.2.2
+    dev: false
+    resolution:
+      integrity: sha512-0qIRsKUxpBrC4+Quro60uZilumMrfjFyQjZioW26tZkRebWcvr6ktT6jAlnQBxd2kLv4Wd190g24U4m7Qyo2Hg==
   /discord.js/11.4.2:
     dependencies:
       long: 4.0.0
@@ -869,14 +878,6 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-X/2yK+b4aDKZ217m3LJF3fKfzl8X9duDmGyLq1pm/Q+/P8e4pJzmMaP+Z+sRLwtLaUsyvSzvdzk1EAP23cWvvQ==
-  /m3u8stream/0.2.2:
-    dependencies:
-      miniget: 1.5.1
-    dev: false
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-R/xWLXBtVr0m9sPruRL4p9uO01JyHxhcQ4nhqQhVgyT802OZyVW+dn+fWHvTnbfE6YMLc65TksZZut+Mh2OVMQ==
   /m3u8stream/0.6.2:
     dependencies:
       miniget: 1.5.1
@@ -951,10 +952,14 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-KJ3AyIVZ76QuWAq43BWjkK+jLdhxhy3s4tsdg9Je91+cIFkeOSW2VEj2lSeKw50CPu1eCCkSbiQEBKL36mpA5w==
-  /moment/2.23.0:
+  /moment-duration-format/2.2.2:
     dev: false
     resolution:
-      integrity: sha512-3IE39bHVqFbWWaPOMHZF98Q9c3LDKGTmypMiTM2QygGXXElkFWIH7GxfmlwmY2vwa+wmNsoYZmG2iusf1ZjJoA==
+      integrity: sha1-uVdhLeJgFsmtnrYIfAVFc+USd3k=
+  /moment/2.24.0:
+    dev: false
+    resolution:
+      integrity: sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
   /ms/2.0.0:
     dev: false
     resolution:
@@ -1498,17 +1503,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=
-  /ytdl-core/0.20.4:
-    dependencies:
-      html-entities: 1.2.1
-      m3u8stream: 0.2.2
-      miniget: 1.5.1
-      sax: 1.2.4
-    dev: false
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-d+jthiJxSQ6yqCeCwwMggXYOjFSOJsD7ahvAAE1sFW9nVNnsA/roz91SFH1FzaMGS7/y7AnJfhVgpE9i8uYjJQ==
   /ytdl-core/0.29.1:
     dependencies:
       html-entities: 1.2.1
@@ -1528,37 +1522,27 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-e5GZDAakgu7EC0ooPAtvuiUz0gugivU8ZkyNen5hwfnl4NAo4HuoDeYODGYso9T8/M7thEW9VZTlCedjXmL/mQ==
-  /ytsearcher/1.2.1:
+  /ytsearcher/1.2.2:
     dev: false
     resolution:
-      integrity: sha512-Bllw6OW/m4O5oeg0CNjJxlSZKSw08cLucIUateD2/9pG+l7ud9Nw68zKZF1Ms2q/IE8brkaWrh5SbEEMKcV0Wg==
-  github.com/DarkoPendragon/discord.js-musicbot-addon/0f7438539bf99f94e435253ed24abb7104db17c9:
-    dependencies:
-      ytdl-core: 0.20.4
-      ytpl: 0.1.14
-      ytsearcher: 1.2.1
-    dev: false
-    name: discord.js-musicbot-addon
-    resolution:
-      registry: 'https://registry.npmjs.org/'
-      tarball: 'https://codeload.github.com/DarkoPendragon/discord.js-musicbot-addon/tar.gz/0f7438539bf99f94e435253ed24abb7104db17c9'
-    version: 13.4.0
+      integrity: sha512-nQ38akKe3O2OGfQba0aTetMx25U/V+jD+MN1v26/lR497KyzpPIolQuNEf5x4O0ANvLLIS9iPSc91Zle1OP+ww==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@ffmpeg-installer/ffmpeg': ^1.0.16
   discord.js: ^11.4.2
+  discord.js-musicbot-addon: ^13.4.1
   dogeify-js: ^1.1.0
   express: ^4.16.4
   ffmpeg-binaries: ^4.0.0
   latest-tweets: ^1.0.4
   maljs: ^0.3.0
-  moment: ^2.23.0
+  moment: ^2.24.0
+  moment-duration-format: ^2.2.2
   node-opus: ^0.3.1
   opusscript: ^0.0.6
   redwrap: ^0.0.4
-  sexymusicbot: 'github:DarkoPendragon/discord.js-musicbot-addon#master'
   snekfetch: ^4.0.4
   superagent: ^4.0.0
   ytdl-core: ^0.29.0
