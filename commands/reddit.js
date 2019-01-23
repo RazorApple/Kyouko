@@ -1,4 +1,3 @@
-
 const Discord = require('discord.js');
 const reddit = require('redwrap');
 
@@ -15,7 +14,7 @@ module.exports = {
         }
         else{
             let max = 100;
-            reddit.r(args[0]).sort('dankmemes').from('all').limit(max, function(err, data, res){
+            reddit.r("dankmemes").sort('top').from('all').limit(max, function(err, data, res){
                 if(err) return console.error(err);
                 let nb = 0;
                 do{
@@ -30,4 +29,3 @@ module.exports = {
             });
         }
 }}
-
