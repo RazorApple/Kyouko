@@ -4,9 +4,8 @@ const reddit = require('redwrap');
 
 
 module.exports = {
-    name: 'reddit',
-    description: 'Fetch reddit.',
-    usage: "[subredditname]",
+    name: 'memes',
+    description: 'spicy memes xdd',
     cooldown: 5,
     execute(client, message, args) {
 
@@ -16,7 +15,7 @@ module.exports = {
         }
         else{
             let max = 100;
-            reddit.r(args[0]).sort('top').from('all').limit(max, function(err, data, res){
+            reddit.r(args[0]).sort('dankmemes').from('all').limit(max, function(err, data, res){
                 if(err) return console.error(err);
                 let nb = 0;
                 do{
