@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo no test command",
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -43,6 +45,8 @@
     "opusscript": "^0.0.6",
     "ffmpeg-binaries": "^4.0.0",
     "moment-duration-format": "^2.2.2",
-    "discord.js-musicbot-addon": "^13.4.1"
-  }
+    "discord.js-musicbot-addon": "^13.4.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
