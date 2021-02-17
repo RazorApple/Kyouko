@@ -1,0 +1,30 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > hawk > hoek:
+        patched: '2021-02-17T11:25:36.065Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > hawk > boom > hoek:
+        patched: '2021-02-17T11:25:36.065Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2021-02-17T11:25:36.065Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > hawk > hoek:
+        patched: '2021-02-17T11:25:36.065Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2021-02-17T11:25:36.065Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2021-02-17T11:25:36.065Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2021-02-17T11:25:36.065Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-02-17T11:25:36.065Z'
+  'npm:mime:20170907':
+    - redwrap > request > mime:
+        patched: '2021-02-17T11:25:36.065Z'
+    - redwrap > request > form-data > mime:
+        patched: '2021-02-17T11:25:36.065Z'
+  'npm:request:20160119':
+    - redwrap > request:
+        patched: '2021-02-17T11:25:36.065Z'
