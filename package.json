@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/RazorApple/pBotv2#readme",
   "dependencies": {
-    "discord.js": "^11.4.2",
+    "discord.js": "^12.0.0",
     "moment": "^2.24.0",
     "snekfetch": "^4.0.4",
     "express": "^4.16.4",
